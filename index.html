@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Taylor N. Albarnaz - Portfolio</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"/>
     </head>
 
@@ -64,7 +65,7 @@
         </header>
 
         <main class="main">
-            <section class="home section" id="home">
+            <section class="home" id="home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
@@ -96,7 +97,7 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Olá, sou Taylor!</h1>
+                            <h1 class="home__title">Taylor N. Albarnaz</h1>
                             <h3 class="home__subtitle">Desenvolvedor Fullstack</h3>
                             <p class="home__description">Experiência com Front-end, Back-end e Game-dev, produzindo conteúdo de qualidade</p>
                             <a href="#contact" class="button button-flex">
@@ -114,9 +115,128 @@
                     </div>
                 </div>
             </section>
+
+            <section class="about" id="about">
+                <h2 class="section__title">Sobre mim</h2>
+                <span class="section__subtitle">Minha introdução</span>
+
+                <div class="about__container container">
+                    <div class="about__data">
+                        <p class="about__description">web developer, with extensive knowledge and years of experience, working in front-end development.</p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name">Completed <br> projects</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Companies <br> worked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <a href="https://taylornalbarnaz.github.io/GridShop/" target="_blank" class="portfolio__content grid swiper-slide">
+                            <img src="media/proj-grid.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Gridshop</h3>
+                                <p class="portfolio__description">Um website responsivo feito totalmente em React, explorando o uso dos Hooks do framework.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://taylornalbarnaz.github.io/LandingPage-DIO/" target="_blank" class="portfolio__content grid swiper-slide">
+                            <img src="media/proj-landingpage.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Landing Page</h3>
+                                <p class="portfolio__description">Uma landing page totalmente responsiva, feita para concluir o bootcamp DIO</p>
+                            </div>
+                        </a>
+
+                        <a href="https://taylornalbarnaz.github.io/CloneGamevicio/" target="_blank" class="portfolio__content grid swiper-slide">
+                            <img src="media/proj-game.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Clone Gamevicio</h3>
+                                <p class="portfolio__description">Um dos meus primeiros projetos, utilizando Sass e Bootstrap</p>
+                            </div>
+                        </a>
+
+                        <a href="https://taylornalbarnaz.github.io/Blog-angular/" target="_blank" class="portfolio__content grid swiper-slide">
+                            <img src="media/proj-blog.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Blog Angular</h3>
+                                <p class="portfolio__description">Um blog que criei para explorar as capacidades do Angular, com rotas e componentização completa.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </main>
 
-        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Taylor</h1>
+                        <span class="footer__subtitle">Desenvolvedor Fullstack</span>
+                    </div>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+    
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>
+                    </ul>
+    
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/taylor-albarnaz/" target="_blank" class="footer__social" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/TaylorNAlbarnaz" target="_blank" class="footer__social" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <p class="footer__copy">&#169; Ahmad Raju. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scroll__icon"></i>
+        </a>
+
+        <script src="scripts/swiper-bundle.min.js"></script>
+        <script src="scripts/jquery-3.6.1.min.js"></script>
         <script src="scripts/main.js"></script>
     </body>
 </html>
