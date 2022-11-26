@@ -6,29 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link href='https://css.gg/css' rel='stylesheet'>
+        
+        <link rel="stylesheet" class="css" href="css/dark-mode.css" disabled>
+        <link rel="stylesheet" class="css" href="css/light-mode.css">
     </head>
+    
     <body>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <nav class="nav__bar dark-mode">
-            <div class="nav__logo">
-
-            </div>
-
+        
+        <section class="nav__bar">
             <div class="nav__menu-desktop">
                 <a href="#" class="nav__item">Home</a>
                 <a href="#" class="nav__item">About</a>
                 <a href="#" class="nav__item">Projects</a>
                 <a href="#" class="nav__item">Contact</a>
                 <div class="nav__theme">
-                    <ion-icon id="dark-light-btn" class="nav__btn" name="contrast-outline"></ion-icon>
+                    <ion-icon class="nav__btn dark-light-btn" name="contrast-outline"></ion-icon>
                 </div>
             </div>
             
             <div class="nav__menu-mobile">
-                <div id="nav__buttons-mobile" class="dark-mode">
+                <div id="nav__buttons-mobile">
                     <a href="#" class="nav__item">Home</a>
                     <a href="#" class="nav__item">About</a>
                     <a href="#" class="nav__item">Projects</a>
@@ -36,11 +36,11 @@
                 </div>
 
                 <div class="nav__theme">
-                    <ion-icon id="dark-light-btn" class="nav__btn" name="contrast-outline"></ion-icon>
+                    <ion-icon class="nav__btn dark-light-btn" name="contrast-outline"></ion-icon>
                 </div>
                 <ion-icon id="open-menu" class="nav__btn" name="menu-outline"></ion-icon>
             </div>
-        </nav>
+        </section>
 
         <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
         <script src="scripts/main.js"></script>

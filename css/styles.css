@@ -28,22 +28,11 @@ a {
     display: flex!important;
 }
 
-/*============= Dark/Light Mode =============*/
-.dark-mode {
-    background-color: var(--primary-color-dark);
-    color: white!important;
-}
-
-.light-mode {
-    background-color: var(--primary-color-light);
-    color: black!important;
-}
-
 /*============= Navigation Bar =============*/
 .nav__bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 100%;
     height: 60px;
@@ -87,7 +76,7 @@ a {
     width: 140px;
     height: auto;
     text-align: right;
-    top: 42px;
+    top: 40px;
     right: -23px;
     padding: 10px;
 }

@@ -11,19 +11,12 @@ openMenu.addEventListener('click', ()=> {
 });
 
 // Change website theme
-const darkLightButton = document.getElementById('dark-light-btn');
+const darkLightButtons = document.getElementsByClassName('dark-light-btn');
 
-function ChangeTheme(e) {
-    if (e.classList.contains('dark-mode')) {
-        e.classList.remove('dark-mode');
-        e.classList.add('light-mode');
-    } else {
-        e.classList.remove('light-mode');
-        e.classList.add('dark-mode');
-    }
+for (const btn of darkLightButtons) {
+    btn.addEventListener('click', ()=> {
+        document.querySelectorAll('link.css').forEach(ss => {
+            ss.disabled = !ss.disabled;
+        })
+    });
 }
-
-darkLightButton.addEventListener('click', ()=> {
-    ChangeTheme(document.getElementById('nav__buttons-mobile'));
-    ChangeTheme(document.getElementsByClassName('nav__bar')[0]);
-});

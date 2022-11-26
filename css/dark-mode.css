@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #282828f2;
+}
+
+.nav__bar {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#nav__buttons-mobile {
+    background-color: var(--primary-color);
+    color: white;
+}
