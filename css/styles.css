@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     font-family: montserrat, sans-serif;
+    scroll-behavior: smooth !important;
 }
 
 :root {
@@ -26,6 +27,10 @@ a {
 
 .show {
     display: flex!important;
+}
+
+.title {
+    font-size: 1.5rem;
 }
 
 /*============= Front Page =============*/
@@ -174,8 +179,8 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 80vh;
-    margin-top: 50px;
+    min-height: 85vh;
+    margin-top: 80px;
 }
 
 .skills span {
@@ -186,13 +191,9 @@ body {
     margin-top: 30px;
 }
 
-.skills__title {
-    font-size: 1.5rem;
-}
-
 .skills__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 80px;
     margin-top: 5px;
@@ -209,6 +210,7 @@ body {
 }
 
 .skill__singular > span {
+    font-size: min(1rem, 1.3vw);
     font-weight: 400;
     backface-visibility: hidden;
 }
@@ -218,5 +220,23 @@ body {
 }
 
 .skill__icon {
-    font-size: 3rem;
+    font-size: min(3rem, 7vw);
+}
+
+@media screen and (max-width: 568px) {
+    .skills__list {
+        flex-wrap: wrap;
+        width: 50vw;
+        height: auto;
+        margin: 5px auto;
+    }
+}
+
+/*============= Projects Page =============*/
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
 }

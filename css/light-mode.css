@@ -10,8 +10,9 @@
 .nav__bar,
 #nav__buttons-mobile,
 .front,
-.skills {
-    color: black;
+.skills,
+.projects {
+    color: rgb(41, 39, 39);
 }
 
 .front__background {
