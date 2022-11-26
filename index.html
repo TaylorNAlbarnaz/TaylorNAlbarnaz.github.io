@@ -1,225 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Taylor N. Albarnaz - Portfolio</title>
+        <title>Document</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"/>
+        <link href='https://css.gg/css' rel='stylesheet'>
     </head>
-
     <body>
-        <header id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Taylor</a>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i> Início
-                            </a>
-                        </li>
+        <nav class="nav__bar dark-mode">
+            <div class="nav__logo">
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> Sobre
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Habilidades
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Serviços
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contato
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-
-                <div class="nav__btns">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <section class="home" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/taylor-albarnaz/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-
-                            <a href="https://github.com/TaylorNAlbarnaz" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
-
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="12" y="18" xlink:href="media/profile.png"/>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Taylor N. Albarnaz</h1>
-                            <h3 class="home__subtitle">Desenvolvedor Fullstack</h3>
-                            <p class="home__description">Experiência com Front-end, Back-end e Game-dev, produzindo conteúdo de qualidade</p>
-                            <a href="#contact" class="button button-flex">
-                                Me Chama! 
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about" id="about">
-                <h2 class="section__title">Sobre mim</h2>
-                <span class="section__subtitle">Minha introdução</span>
-
-                <div class="about__container container">
-                    <div class="about__data">
-                        <p class="about__description">Desenvolvedor Fullstack com alto conhecimento em tecnologias como Javascript, Typescript, JQuery, React e Angular</p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">10</span>
-                                <span class="about__info-name">Anos de <br> Experiência</span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">10+</span>
-                                <span class="about__info-name">Projetos <br> Concluídos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="portfolio" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Meus projetos mais recentes</span>
-
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <a href="https://taylornalbarnaz.github.io/GridShop/" target="_blank" class="portfolio__content grid swiper-slide">
-                            <img src="media/proj-grid.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Gridshop</h3>
-                                <p class="portfolio__description">Um website responsivo feito totalmente em React, explorando o uso dos Hooks do framework.</p>
-                            </div>
-                        </a>
-
-                        <a href="https://taylornalbarnaz.github.io/LandingPage-DIO/" target="_blank" class="portfolio__content grid swiper-slide">
-                            <img src="media/proj-landingpage.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Landing Page</h3>
-                                <p class="portfolio__description">Uma landing page totalmente responsiva, feita para concluir o bootcamp DIO</p>
-                            </div>
-                        </a>
-
-                        <a href="https://taylornalbarnaz.github.io/CloneGamevicio/" target="_blank" class="portfolio__content grid swiper-slide">
-                            <img src="media/proj-game.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Clone Gamevicio</h3>
-                                <p class="portfolio__description">Um dos meus primeiros projetos, utilizando Sass e Bootstrap</p>
-                            </div>
-                        </a>
-
-                        <a href="https://taylornalbarnaz.github.io/Blog-angular/" target="_blank" class="portfolio__content grid swiper-slide">
-                            <img src="media/proj-blog.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Blog Angular</h3>
-                                <p class="portfolio__description">Um blog que criei para explorar as capacidades do Angular, com rotas e componentização completa.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon" style="margin-left: 75px;"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon" style="margin-right: 75px;"></i>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Taylor</h1>
-                        <span class="footer__subtitle">Desenvolvedor Fullstack</span>
-                    </div>
-    
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                    </ul>
-    
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/taylor-albarnaz/" target="_blank" class="footer__social" class="footer__social">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-
-                        <a href="https://github.com/TaylorNAlbarnaz" target="_blank" class="footer__social" class="footer__social">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-                </div>
-    
-                <p class="footer__copy">&#169; Ahmad Raju. All rights reserved.</p>
             </div>
-        </footer>
 
-        <a href="" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scroll__icon"></i>
-        </a>
+            <div class="nav__menu-desktop">
+                <a href="#" class="nav__item">Home</a>
+                <a href="#" class="nav__item">About</a>
+                <a href="#" class="nav__item">Projects</a>
+                <a href="#" class="nav__item">Contact</a>
+                <div class="nav__theme">
+                    <ion-icon id="dark-light-btn" class="nav__btn" name="contrast-outline"></ion-icon>
+                </div>
+            </div>
+            
+            <div class="nav__menu-mobile">
+                <div id="nav__buttons-mobile" class="dark-mode">
+                    <a href="#" class="nav__item">Home</a>
+                    <a href="#" class="nav__item">About</a>
+                    <a href="#" class="nav__item">Projects</a>
+                    <a href="#" class="nav__item">Contact</a>
+                </div>
 
-        <script src="scripts/swiper-bundle.min.js"></script>
-        <script src="scripts/jquery-3.6.1.min.js"></script>
+                <div class="nav__theme">
+                    <ion-icon id="dark-light-btn" class="nav__btn" name="contrast-outline"></ion-icon>
+                </div>
+                <ion-icon id="open-menu" class="nav__btn" name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
         <script src="scripts/main.js"></script>
     </body>
 </html>
