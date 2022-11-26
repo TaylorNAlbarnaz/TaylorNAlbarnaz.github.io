@@ -2,12 +2,19 @@
     --primary-color: #fbf9f9f2;
 }
 
-.nav__bar {
+.nav__bar,
+#nav__buttons-mobile {
     background-color: var(--primary-color);
+}
+
+.nav__bar,
+#nav__buttons-mobile,
+.front {
     color: black;
 }
 
-#nav__buttons-mobile {
-    background-color: var(--primary-color);
-    color: black;
+.front__background {
+    filter: blur(4px) brightness(0.8) contrast(1.14)!important;
+    -webkit-filter: blur(4px) brightness(0.8) contrast(1.14)!important;
+    -moz-filter: blur(4px) brightness(0.8) contrast(1.14)!important;
 }
