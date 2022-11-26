@@ -9,7 +9,8 @@
 
 .nav__bar,
 #nav__buttons-mobile,
-.front {
+.front,
+.skills {
     color: black;
 }
 
