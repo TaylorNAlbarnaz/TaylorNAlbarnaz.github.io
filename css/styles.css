@@ -242,9 +242,23 @@ a {
 @media screen and (max-width: 568px) {
     .skills__list {
         flex-wrap: wrap;
-        width: 50vw;
+        width: 80vw;
         height: auto;
         margin: 5px auto;
+        row-gap: 5px;
+    }
+
+    .skill__singular {
+        width: 25vw;
+    }
+
+    .skill__singular > span {
+        font-size: min(1.5rem, 3vw);
+        font-weight: 600;
+    }
+
+    .skill__icon {
+        font-size: min(3rem, 10vw);
     }
 }
 
