@@ -11,7 +11,9 @@
 #nav__buttons-mobile,
 .front,
 .skills,
-.projects {
+.projects,
+.about,
+.contact {
     color: rgb(41, 39, 39);
 }
 

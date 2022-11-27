@@ -20,3 +20,48 @@ for (const btn of darkLightButtons) {
         })
     });
 }
+
+// Replace navbar scrolling
+const navAnchors = document.querySelectorAll('.nav__bar a');
+
+navAnchors.forEach(nav => {
+    nav.onclick = () => {
+        document.getElementById('nav__buttons-mobile').classList.remove('show');
+        setActive(nav);
+
+        const id = nav.getAttribute('href').slice(1);
+        if (id != '') {
+            const scrollTo = document.getElementById(id);
+
+            let offsetPosition = scrollTo.getBoundingClientRect().top;
+            offsetPosition += window.pageYOffset;
+            offsetPosition -= document.querySelector('.nav__bar').offsetHeight * 1.1;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+            return false;
+        }
+    }
+})
+
+// Select navbar item
+const sections = document.querySelectorAll('section');
+
+function setActive(e) {
+    navAnchors.forEach(nav => {
+        nav.classList.remove('active__nav');
+    })
+    e.classList.add('active__nav');
+}
+
+document.onscroll = () => {
+    const top = window.scrollY;
+    sections.forEach( section => {
+        if (top > section.offsetTop - 300 && top < section.offsetTop + section.offsetHeight) {
+            const nav = document.querySelector("[href*='"+section.getAttribute('id')+"'");
+            setActive(nav);
+        }
+    });
+}

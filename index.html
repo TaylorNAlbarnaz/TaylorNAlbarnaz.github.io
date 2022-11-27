@@ -17,7 +17,7 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
         <!---------------- Front Page ----------------->
-        <section class="front">
+        <section class="front" id="front">
             <div class="front__background"></div>
             <div class="front__content">
                 <div class="front__name">
@@ -35,15 +35,14 @@
             </div>
         </section>
 
-
         <!----------- Navigation Bar/Header ----------->
-        <section class="nav__bar">
+        <header class="nav__bar">
             <div class="nav__menu-desktop">
-                <a href="#" class="nav__item">Home</a>
-                <a href="#" class="nav__item">About</a>
-                <a href="#skills" class="nav__item">Skills</a>
-                <a href="#projects" class="nav__item">Projects</a>
-                <a href="#" class="nav__item">Contact</a>
+                <a href="#front" class="nav__item active__nav">Início</a>
+                <a href="#about" class="nav__item">Sobre Mim</a>
+                <a href="#skills" class="nav__item">Habilidades</a>
+                <a href="#projects" class="nav__item">Projetos</a>
+                <a href="#contact" class="nav__item">Contato</a>
                 <div class="nav__theme">
                     <ion-icon class="nav__btn dark-light-btn" name="contrast-outline"></ion-icon>
                 </div>
@@ -51,11 +50,11 @@
             
             <div class="nav__menu-mobile">
                 <div id="nav__buttons-mobile">
-                    <a href="#" class="nav__item">Home</a>
-                    <a href="#" class="nav__item">About</a>
-                    <a href="#skills" class="nav__item">Skills</a>
-                    <a href="#projects" class="nav__item">Projects</a>
-                    <a href="#" class="nav__item">Contact</a>
+                    <a href="#front" class="nav__item">Início</a>
+                    <a href="#about" class="nav__item">Sobre Mim</a>
+                    <a href="#skills" class="nav__item">Habilidades</a>
+                    <a href="#projects" class="nav__item">Projetos</a>
+                    <a href="#contact" class="nav__item">Contato</a>
                 </div>
 
                 <div class="nav__theme">
@@ -63,11 +62,17 @@
                 </div>
                 <ion-icon id="open-menu" class="nav__btn" name="menu-outline"></ion-icon>
             </div>
+        </header>
+
+        <!--------------- About Page --------------->
+        <section class="about" id="about">
+            <div class="title">
+                <h2>SOBRE MIM</h2>
+            </div>
         </section>
 
         <!---------------- Skills Page ---------------->
-        <div class="connector" id="skills"></div>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="title">
                 <h2>SKILLS</h2>
             </div>
@@ -201,14 +206,19 @@
         </section>
 
         <!--------------- Projects Page --------------->
-        <div class="connector" id="projects"></div>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="title">
                 <h2>PROJETOS</h2>
             </div>
         </section>
 
-        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+        <!--------------- Contact Page --------------->
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2>CONTATO</h2>
+            </div>
+        </section>
+
         <script src="scripts/main.js"></script>
     </body>
 </html>
