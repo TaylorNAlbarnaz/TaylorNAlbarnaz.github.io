@@ -18,7 +18,7 @@
 }
 
 .front__background {
-    filter: blur(4px) brightness(0.8) contrast(1.14)!important;
-    -webkit-filter: blur(4px) brightness(0.8) contrast(1.14)!important;
-    -moz-filter: blur(4px) brightness(0.8) contrast(1.14)!important;
+    filter: brightness(0.8) contrast(1.14)!important;
+    -webkit-filter: brightness(0.8) contrast(1.14)!important;
+    -moz-filter: brightness(0.8) contrast(1.14)!important;
 }
