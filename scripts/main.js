@@ -22,7 +22,7 @@ for (const btn of darkLightButtons) {
 }
 
 // Replace navbar scrolling
-const navAnchors = document.querySelectorAll('.nav__bar a');
+const navAnchors = document.querySelectorAll("a[href^='#']");
 
 navAnchors.forEach(nav => {
     nav.onclick = () => {
@@ -60,7 +60,7 @@ document.onscroll = () => {
     const top = window.scrollY;
     sections.forEach( section => {
         if (top > section.offsetTop - 300 && top < section.offsetTop + section.offsetHeight) {
-            const nav = document.querySelector("[href*='"+section.getAttribute('id')+"'");
+            const nav = document.querySelector(".nav__bar a[href*='"+section.getAttribute('id')+"'");
             setActive(nav);
         }
     });
