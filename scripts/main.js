@@ -73,28 +73,48 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         deleteSpeed: 75,
     })
-        .type("Fullstack")
-        .pause(2000)
-        .delete()
-        .pause(500)
-        .type("React")
-        .pause(2000)
-        .delete()
-        .pause(500)
-        .type("Angular")
-        .pause(2000)
-        .delete()
-        .pause(500)
-        .type("Node")
-        .pause(2000)
-        .delete()
-        .pause(500)
-        .type("C#")
-        .pause(2000)
-        .delete()
-        .pause(500)
-        .type("PHP")
-        .pause(2000)
-        .delete()
-        .go()
+    .type("Fullstack")
+    .pause(2000)
+    .delete()
+    .pause(500)
+
+    .type("React") 
+    .pause(2000)
+    .delete()
+    .pause(500)
+
+    .type("Angular")
+    .pause(2000)
+    .delete()
+    .pause(500)
+
+    .type("Node")
+    .pause(2000)
+    .delete()
+    .pause(500)
+
+    .type("C#")
+    .pause(2000)
+    .delete()
+    .pause(500)
+
+    .type("PHP")
+    .pause(2000)
+    .delete()
+    .go()
+});
+
+// Reveal on Scroll
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "40px",
+    duration: 1000,
+    reset: true,
   });
+
+sr.reveal(".front__name", {});
+sr.reveal(".front__contact-btn", { interval: 200 });
+sr.reveal(".front__social", { interval: 400 });
+sr.reveal(".skills__category", {});
+sr.reveal(".projects__list", {});
+sr.reveal(".project__single", {});

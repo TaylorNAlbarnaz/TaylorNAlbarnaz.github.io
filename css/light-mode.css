@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #fbf9f9f2;
+    --primary-color: #e9ebeef2;
+    --secondary-color: #292727;
 }
 
 .nav__bar,
@@ -14,11 +15,15 @@
 .projects,
 .about,
 .contact {
-    color: rgb(41, 39, 39);
+    color: var(--secondary-color);
 }
 
 .front__background {
     filter: brightness(0.8) contrast(1.14)!important;
     -webkit-filter: brightness(0.8) contrast(1.14)!important;
     -moz-filter: brightness(0.8) contrast(1.14)!important;
+}
+
+.project__single {
+    border: 3px solid var(--secondary-color);
 }
