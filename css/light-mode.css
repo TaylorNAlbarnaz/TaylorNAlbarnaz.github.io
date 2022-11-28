@@ -13,8 +13,7 @@
 .front,
 .skills,
 .projects,
-.about,
-.contact {
+.about {
     color: var(--secondary-color);
 }
 

@@ -113,7 +113,7 @@ const sr = ScrollReveal({
   });
 
 sr.reveal(".front__name", {});
-sr.reveal(".front__contact-btn", { interval: 200 });
+sr.reveal(".front__contact-anim", { interval: 200 });
 sr.reveal(".front__social", { interval: 400 });
 sr.reveal(".skills__category", {});
 sr.reveal(".projects__list", {});
