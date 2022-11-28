@@ -65,3 +65,36 @@ document.onscroll = () => {
         }
     });
 }
+
+// Typing effect
+document.addEventListener("DOMContentLoaded", function () {
+    new TypeIt("#typer", {
+        lifeLike: true,
+        loop: true,
+        deleteSpeed: 75,
+    })
+        .type("Fullstack")
+        .pause(2000)
+        .delete()
+        .pause(500)
+        .type("React")
+        .pause(2000)
+        .delete()
+        .pause(500)
+        .type("Angular")
+        .pause(2000)
+        .delete()
+        .pause(500)
+        .type("Node")
+        .pause(2000)
+        .delete()
+        .pause(500)
+        .type("C#")
+        .pause(2000)
+        .delete()
+        .pause(500)
+        .type("PHP")
+        .pause(2000)
+        .delete()
+        .go()
+  });

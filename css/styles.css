@@ -11,7 +11,7 @@
 }
 
 :root {
-    --text-color: rgb(47, 155, 243);
+    --text-color: rgb(27, 118, 208);
 }
 
 body {
@@ -187,11 +187,11 @@ h1, h2 {
 
 .nav__bar a:hover {
     transition: .3s;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--text-color);
 }
 
 .active__nav {
-    border-bottom: 2px solid white!important;
+    border-bottom: 2px solid var(--text-color)!important;
 }
 
 .nav__theme {
@@ -222,6 +222,11 @@ h1, h2 {
 .show {
     opacity: 1!important;
     right: -23px!important;
+}
+
+.title > h2 {
+    color: var(--text-color)!important;
+    border-bottom: 3px solid var(--text-color);
 }
 
 @media screen and (max-width: 568px) {
